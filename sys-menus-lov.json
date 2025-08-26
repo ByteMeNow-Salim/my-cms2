@@ -1,0 +1,30 @@
+[
+  {
+    "menu": "NEWS",
+    "menu_id": 1,
+    "sub_menu": "Local",
+    "sub_menu_id": 1,
+    "target_window": "Article"
+  },
+  {
+    "menu": "ABC",
+    "menu_id": 2,
+    "sub_menu": "A1",
+    "sub_menu_id": 2,
+    "target_window": "Article"
+  },
+  {
+    "menu": "test",
+    "menu_id": 3,
+    "sub_menu": "Home",
+    "sub_menu_id": 3,
+    "target_window": "Article"
+  },
+  {
+    "menu": "test",
+    "menu_id": 3,
+    "sub_menu": "About Us",
+    "sub_menu_id": 4,
+    "target_window": "Article"
+  }
+]

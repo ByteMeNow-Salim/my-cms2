@@ -1,0 +1,41 @@
+name = "my-cms"
+main = "index.js"
+compatibility_date = "2024-05-02"
+
+# Minimal R2 binding - bucket name will be read from sys-settings-admin.json
+r2_buckets = [
+  { binding = "R2", bucket_name = "", preview_bucket_name = "" }
+]
+
+[vars]
+ENVIRONMENT = "production"
+
+[dev]
+ip = "0.0.0.0"
+port = 8787
+
+# Module rules to ensure all JS files are treated as ES modules
+[[rules]]
+type = "ESModule"
+globs = ["**/*.js"]
+fallthrough = true
+
+# Minimal D1 binding - database details will be read from sys-settings-admin.json
+[[d1_databases]]
+binding = "D1"
+database_name = ""
+database_id = ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+

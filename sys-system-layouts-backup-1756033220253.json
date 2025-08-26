@@ -1,0 +1,287 @@
+[
+  {
+    "system_layout_id": 1,
+    "layout_name": "Highlight1",
+    "active": "yes",
+    "layout_file": "highlight1.js",
+    "layout_body": "<div class='highlight-section'><h2>Featured Stories</h2>{{RepeatBegin}}<article class='featured-article'><h3>{{heading}}</h3><p class='meta'>{{menu}} | {{issue_date}}</p><div class='content'>{{body}}</div>{{#if picture_location}}<img src='{{picture_location}}' alt='{{heading}}' />{{/if}}</article>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 5,
+    "group_type": "highlight",
+    "file_name": "article-highlight1.json",
+    "record_limit": 25,
+    "group_criteria": {
+      "field": "highlight1_flag",
+      "value": "Yes",
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 2,
+    "layout_name": "Highlight2",
+    "active": "yes",
+    "layout_file": "highlight2.js",
+    "layout_body": "<div class='highlight2-section'><h2>Top Business</h2>{{RepeatBegin}}<article class='business-highlight'><h3>{{heading}}</h3><p class='byline'>By {{by_line}}</p><p class='excerpt'>{{body}}</p></article>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 3,
+    "group_type": "highlight",
+    "file_name": "article-highlight2.json",
+    "record_limit": 25,
+    "group_criteria": {
+      "field": "highlight2_flag",
+      "value": "Yes",
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 3,
+    "layout_name": "SportsNews",
+    "active": "yes",
+    "layout_file": "sports-articles.js",
+    "layout_body": "<div class='sports-section'><h2>Sports News</h2>{{RepeatBegin}}<div class='sport-article'><h4>{{heading}}</h4><p>{{issue_date}}</p><p>{{body}}</p></div>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 10,
+    "group_type": "submenu_specific",
+    "file_name": "article-sports-news.json",
+    "record_limit": 25,
+    "group_criteria": {
+      "field": "sub_menu_id",
+      "value": 1,
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 4,
+    "layout_name": "BusinessNews",
+    "active": "yes",
+    "layout_file": "business-articles.js",
+    "layout_body": "<div class='business-section'><h2>Business News</h2>{{RepeatBegin}}<div class='business-article'><h4>{{heading}}</h4><p class='date'>{{issue_date}}</p><p class='content'>{{body}}</p></div>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 8,
+    "group_type": "submenu_specific",
+    "file_name": "article-business-news.json",
+    "record_limit": 25,
+    "group_criteria": {
+      "field": "sub_menu_id",
+      "value": 2,
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 5,
+    "layout_name": "Highlight3",
+    "active": "yes",
+    "layout_file": "highlight3.js",
+    "layout_body": "<div class='highlight3-section'><h2>Breaking News</h2>{{RepeatBegin}}<div class='breaking-news'><h3>{{heading}}</h3><p>{{body}}</p></div>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 3,
+    "group_type": "highlight",
+    "file_name": "article-highlight3.json",
+    "record_limit": 25,
+    "group_criteria": {
+      "field": "highlight3_flag",
+      "value": "Yes",
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 6,
+    "layout_name": "test-layout",
+    "active": "yes",
+    "layout_file": "test-layout.js",
+    "layout_body": "<div class='test-layout'>Articles found: {{article_count}}{{RepeatBegin}}<div class='article'><h3>{{heading}}</h3><p>{{issue_date}}</p></div>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 10,
+    "group_type": "mixed",
+    "file_name": "article-mixed.json",
+    "record_limit": 50,
+    "group_criteria": {
+      "field": "active",
+      "value": "Yes",
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 7,
+    "layout_name": "latest-articles",
+    "active": "yes",
+    "layout_file": "latest-articles.js",
+    "layout_body": "<h2>Latest Articles</h2>{{RepeatBegin}}<article><h3>{{heading}}</h3><time>{{issue_date}}</time><p>{{body}}</p></article>{{RepeatEnd}}",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 5,
+    "group_type": "latest",
+    "file_name": "article-latest.json",
+    "record_limit": 30,
+    "group_criteria": {
+      "field": "active",
+      "value": "Yes",
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 8,
+    "layout_name": "LatestMixed",
+    "active": "yes",
+    "layout_file": "latest-mixed.js",
+    "layout_body": "<div class='latest-mixed-section'><h2>Latest News</h2>{{RepeatBegin}}<article class='mixed-article'><h3>{{heading}}</h3><p class='meta'>{{menu}} | {{issue_date}}</p><p class='excerpt'>{{body}}</p></article>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 15,
+    "group_type": "mixed",
+    "file_name": "article-latest-mixed.json",
+    "record_limit": 50,
+    "group_criteria": {
+      "field": "active",
+      "value": "Yes",
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 9,
+    "layout_name": "AllNewsCategories",
+    "active": "yes",
+    "layout_file": "news-mixed.js",
+    "layout_body": "<div class='news-mixed-section'><h2>All News Categories</h2>{{RepeatBegin}}<div class='news-item'><h4>{{heading}}</h4><span class='category'>{{menu}}</span><p>{{body}}</p></div>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 20,
+    "group_type": "menu_group",
+    "file_name": "article-news-all.json",
+    "record_limit": 40,
+    "group_criteria": {
+      "field": "menu_id",
+      "value": 1,
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 13,
+    "layout_name": "AllServices",
+    "active": "yes",
+    "layout_file": "services-all.js",
+    "layout_body": "<div class='services-all-section'><h2>All Services</h2>{{RepeatBegin}}<div class='service-item'><h4>{{heading}}</h4><span class='submenu'>{{sub_menu}}</span><p>{{body}}</p></div>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 15,
+    "group_type": "menu_group",
+    "file_name": "article-services-all.json",
+    "record_limit": 30,
+    "group_criteria": {
+      "field": "menu_id",
+      "value": 2,
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 14,
+    "layout_name": "DirectoryListings",
+    "active": "yes",
+    "layout_file": "directory-all.js",
+    "layout_body": "<div class='directory-section'><h2>Directory Listings</h2>{{RepeatBegin}}<div class='directory-item'><h4>{{heading}}</h4><span class='category'>{{sub_menu}}</span><p>{{body}}</p></div>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 12,
+    "group_type": "menu_group",
+    "file_name": "article-directory-all.json",
+    "record_limit": 25,
+    "group_criteria": {
+      "field": "menu_id",
+      "value": 3,
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 15,
+    "layout_name": "ClassifiedAds",
+    "active": "yes",
+    "layout_file": "classifieds-all.js",
+    "layout_body": "<div class='classifieds-section'><h2>Classified Ads</h2>{{RepeatBegin}}<div class='classified-item'><h4>{{heading}}</h4><span class='type'>{{sub_menu}}</span><p>{{body}}</p></div>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 18,
+    "group_type": "menu_group",
+    "file_name": "article-classifieds-all.json",
+    "record_limit": 35,
+    "group_criteria": {
+      "field": "menu_id",
+      "value": 4,
+      "operator": "equals"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 10,
+    "layout_name": "TopStories",
+    "active": "yes",
+    "layout_file": "top-stories.js",
+    "layout_body": "<div class='top-stories-section'><h2>Top Stories Today</h2>{{RepeatBegin}}<article class='top-story'><h3>{{heading}}</h3><p class='byline'>By {{by_line}}</p><p class='date'>{{issue_date}}</p><div class='content'>{{body}}</div></article>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 10,
+    "group_type": "recent",
+    "file_name": "article-top-stories.json",
+    "record_limit": 30,
+    "group_criteria": {
+      "field": "issue_date",
+      "value": "recent_24h",
+      "operator": "recent"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 11,
+    "layout_name": "FeaturedMix",
+    "active": "yes",
+    "layout_file": "featured-mix.js",
+    "layout_body": "<div class='featured-mix-section'><h2>Featured Articles</h2>{{RepeatBegin}}<div class='featured-item'><h4>{{heading}}</h4><p class='meta'>{{menu}} | {{issue_date}}</p>{{#if picture_location}}<img src='{{picture_location}}' alt='{{heading}}' />{{/if}}<p>{{body}}</p></div>{{RepeatEnd}}</div>",
+    "layout_order": "last_update_date DESC",
+    "layout_limit": 12,
+    "group_type": "any_highlight",
+    "file_name": "article-featured-mix.json",
+    "record_limit": 35,
+    "group_criteria": {
+      "field": "any_highlight_flag",
+      "value": "Yes",
+      "operator": "any_highlight"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  },
+  {
+    "system_layout_id": 12,
+    "layout_name": "ServicesOnly",
+    "active": "yes",
+    "layout_file": "services-only.js",
+    "layout_body": "<div class='services-section'><h2>Our Services</h2>{{RepeatBegin}}<div class='service-item'><h4>{{heading}}</h4><p>{{body}}</p></div>{{RepeatEnd}}</div>",
+    "layout_order": "issue_date DESC",
+    "layout_limit": 8,
+    "group_type": "services",
+    "file_name": "article-services.json",
+    "record_limit": 25,
+    "group_criteria": {
+      "field": "menu",
+      "value": "SERVICES-",
+      "operator": "starts_with"
+    },
+    "auto_update": true,
+    "cache_duration": 300
+  }
+]

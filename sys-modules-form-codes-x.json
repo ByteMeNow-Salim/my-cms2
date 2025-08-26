@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "name": "code_id",
+      "label": "",
+      "type": "number",
+      "required": false
+    },
+    {
+      "name": "code_type",
+      "label": "Code Type",
+      "type": "text",
+      "required": false,
+      "size": "10",
+      "maxlength": "10"
+    },
+    {
+      "name": "code_name",
+      "label": "Code Name",
+      "type": "text",
+      "required": false,
+      "size": "50",
+      "maxlength": "75"
+    },
+    {
+      "name": "order_sequence",
+      "label": "Order",
+      "type": "number",
+      "required": false,
+      "min": "-999999",
+      "max": "999999",
+      "step": "any"
+    },
+    {
+      "name": "active",
+      "label": "Active",
+      "type": "text",
+      "required": false,
+      "size": "10",
+      "maxlength": "10",
+      "lov_static": "<option>No<option>Yes<option>"
+    }
+  ]
+}

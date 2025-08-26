@@ -1,0 +1,94 @@
+{
+  "sites": [
+    {
+      "site_id": "cfsalim-com",
+      "site_name": "CF Salim Main Site",
+      "domain": "cfsalim.com",
+      "status": "active",
+      "cloudflare_config": {
+        "account_id": "14d520fc3317fd993f50bd647d75ac61",
+        "zone_id": "your_zone_id_here",
+        "api_token": "your_api_token_here"
+      },
+      "r2_config": {
+        "bucket_name": "cfsalim-com",
+        "access_key_id": "f1d793e8b6ca2d7e1ff7a4b1ec24e3f1",
+        "secret_access_key": "3a49b028f2cda790bee3258930b526db6d965b446c63c162bf921a7d67a1b066",
+        "public_url": "https://pub-0852f3a82b534b18991316b054236b23.r2.dev",
+        "custom_domain": null,
+        "auto_create": true
+      },
+      "d1_config": {
+        "database_name": "cfsalim-com",
+        "database_id": "e98b460a-688d-4cc5-9290-c41da8a1efa0",
+        "auto_create": true,
+        "schema_version": "1.0"
+      },
+      "worker_config": {
+        "worker_name": "cfsalim-com-cms",
+        "subdomain": "cfsalim-com",
+        "routes": [
+          {
+            "pattern": "cfsalim.com/*",
+            "zone_id": "your_zone_id_here"
+          }
+        ],
+        "auto_deploy": true
+      },
+      "modules": [
+        "system-forms",
+        "auction-events", 
+        "articles",
+        "site-settings"
+      ],
+      "cors_enabled": true,
+      "file_upload_path": "uploads/",
+      "max_file_size": "10MB",
+      "allowed_file_types": ["jpg", "jpeg", "png", "gif", "pdf", "doc", "docx"],
+      "auto_provision": {
+        "enabled": true,
+        "create_r2_bucket": true,
+        "create_d1_database": true,
+        "setup_domain_routing": true,
+        "deploy_worker": true,
+        "initialize_data": true
+      },
+      "template": "standard",
+      "created_at": "2025-08-14T00:00:00Z",
+      "updated_at": "2025-08-14T05:45:00Z"
+    }
+  ],
+  "default_site": "cfsalim-com",
+  "global_settings": {
+    "cms_version": "1.0.0",
+    "default_timezone": "UTC",
+    "session_timeout": 3600,
+    "backup_retention_days": 30,
+    "auto_provisioning": {
+      "enabled": true,
+      "master_api_token": "your_master_api_token",
+      "worker_template": "my-cms-template",
+      "default_modules": ["articles", "site-settings", "gallery"]
+    }
+  },
+  "templates": {
+    "standard": {
+      "description": "Standard CMS template with basic modules",
+      "modules": ["articles", "site-settings", "gallery", "forms"],
+      "default_pages": ["home", "about", "contact"],
+      "theme": "default"
+    },
+    "ecommerce": {
+      "description": "E-commerce template with product management",
+      "modules": ["products", "orders", "customers", "inventory"],
+      "default_pages": ["home", "shop", "cart", "checkout"],
+      "theme": "shop"
+    },
+    "blog": {
+      "description": "Blog template with content management",
+      "modules": ["posts", "categories", "comments", "authors"],
+      "default_pages": ["home", "blog", "archive"],
+      "theme": "blog"
+    }
+  }
+}

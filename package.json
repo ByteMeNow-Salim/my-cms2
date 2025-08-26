@@ -1,0 +1,23 @@
+{
+	"name": "my-cms",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"deploy-with-config": "node scripts/deploy-with-config.js",
+		"fix-domains": "node scripts/fix-hardcoded-domains.js",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"vitest": "~3.2.0",
+		"wrangler": "^4.27.0"
+	},
+	"dependencies": {
+		"@aws-sdk/client-s3": "^3.864.0",
+		"@aws-sdk/s3-request-presigner": "^3.864.0"
+	}
+}

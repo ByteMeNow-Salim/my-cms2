@@ -1,0 +1,206 @@
+{
+  "config_type": "client_settings",
+  "version": "1.0.0",
+  "last_updated": "2025-01-21T10:30:00Z",
+  "client_id": "cfsalim-com",
+
+  "site_info": {
+    "site_name": "CF Salim Main Site",
+    "site_description": "A powerful CMS website",
+    "default_language": "en",
+    "timezone": "UTC",
+    "date_format": "YYYY-MM-DD",
+    "currency": "USD",
+    "contact_email": "admin@cfsalim.com"
+  },
+
+  "branding": {
+    "logo_url": "",
+    "favicon_url": "",
+    "primary_color": "#007bff",
+    "secondary_color": "#6c757d",
+    "accent_color": "#28a745",
+    "custom_css": "",
+    "custom_js": "",
+    "footer_text": "© 2025 CF Salim. All rights reserved.",
+    "show_powered_by": true
+  },
+
+  "image_upload": {
+    "compression_enabled": true,
+    "image_quality": 0.8,
+    "max_image_dimension": 1920,
+    "max_file_size": 10485760,
+    "allowed_file_types": ["image/jpeg", "image/png", "image/gif", "image/webp"],
+    "generate_thumbnails": false,
+    "thumbnail_size": 300,
+    "convert_to_jpeg": true
+  },
+
+  "compression_settings": {
+    "ole_single": {
+      "max_width": 1920,
+      "max_height": 1920, 
+      "quality": 0.8,
+      "convert_to_jpeg": true
+    },
+    "ole_multiple": {
+      "max_width": 1200,
+      "max_height": 1200,
+      "quality": 0.8,
+      "convert_to_jpeg": true
+    },
+    "thumbnail": {
+      "max_width": 300,
+      "max_height": 300,
+      "quality": 0.7,
+      "convert_to_jpeg": true
+    }
+  },
+
+  "ui_text": {
+    "single_upload": {
+      "choose_file": "Choose File",
+      "uploading": "Uploading...",
+      "upload_complete": "Upload complete!",
+      "upload_error": "Upload failed",
+      "image_removed": "Image removed"
+    },
+    "multiple_upload": {
+      "drag_drop_text": "Drag & drop files here, or",
+      "browse_button": "Browse", 
+      "file_size_limit": "Maximum file size: 10MB",
+      "uploading_multiple": "Uploading {count} file(s)...",
+      "upload_complete_multiple": "Successfully uploaded {count} file(s)!",
+      "current_images": "Current Images ({count})",
+      "clear_all": "Clear All",
+      "remove_image": "Remove",
+      "preview_image": "Preview",
+      "confirm_clear_all": "Are you sure you want to remove all images?"
+    }
+  },
+
+  "dashboard_preferences": {
+    "theme": "light",
+    "items_per_page": 20,
+    "show_help_tooltips": true,
+    "enable_quick_actions": true,
+    "sidebar_collapsed": false,
+    "text_editor": "rich",
+    "auto_save_interval": 30,
+    "show_preview": true
+  },
+
+  "content_settings": {
+    "default_status": "draft",
+    "auto_save": true,
+    "revision_history": true,
+    "max_revisions": 50,
+    "require_approval": false,
+    "enable_comments": true,
+    "moderate_comments": true
+  },
+
+  "modules": {
+    "enabled": [
+      "system-forms",
+      "auction-events",
+      "articles",
+      "site-settings"
+    ],
+    "module_settings": {
+      "articles": {
+        "enable_categories": true,
+        "enable_tags": true,
+        "enable_featured_image": true,
+        "enable_excerpt": true,
+        "seo_enabled": true
+      },
+      "gallery": {
+        "lightbox_enabled": true,
+        "auto_resize": true,
+        "slideshow_mode": true,
+        "show_captions": true
+      },
+      "forms": {
+        "spam_protection": true,
+        "email_notifications": true,
+        "save_submissions": true,
+        "required_captcha": false
+      }
+    }
+  },
+
+  "file_settings": {
+    "upload_path": "uploads/",
+    "max_file_size": "10MB",
+    "allowed_file_types": ["jpg", "jpeg", "png", "gif", "pdf", "doc", "docx"]
+  },
+
+  "seo": {
+    "meta_tags_enabled": true,
+    "sitemap_generation": true,
+    "robots_txt_enabled": true,
+    "google_analytics_id": "",
+    "google_tag_manager_id": "",
+    "facebook_pixel_id": "",
+    "custom_head_code": "",
+    "custom_body_code": ""
+  },
+
+  "performance": {
+    "caching_enabled": true,
+    "cache_ttl": 300,
+    "lazy_loading": true,
+    "image_optimization": true,
+    "minify_css": true,
+    "minify_js": true,
+    "enable_compression": true
+  },
+
+  "security": {
+    "enable_ssl_redirect": true,
+    "cors_enabled": true,
+    "allowed_domains": ["*"],
+    "rate_limiting_enabled": false,
+    "max_requests_per_minute": 60
+  },
+
+  "backup": {
+    "auto_backup_enabled": true,
+    "backup_frequency": "daily",
+    "backup_retention_days": 30,
+    "include_media_files": true,
+    "email_backup_reports": false
+  },
+
+  "limits": {
+    "max_articles": 10000000,
+    "max_images": 5000000,
+    "max_file_uploads_per_day": 100000,
+    "storage_quota_mb": 1024,
+    "bandwidth_quota_mb": 10240
+  },
+
+  "templates": {
+    "standard": {
+      "description": "Standard CMS template with basic modules",
+      "modules": ["articles", "site-settings", "gallery", "forms"],
+      "default_pages": ["home", "about", "contact"],
+      "theme": "default"
+    },
+    "ecommerce": {
+      "description": "E-commerce template with product management",
+      "modules": ["products", "orders", "customers", "inventory"],
+      "default_pages": ["home", "shop", "cart", "checkout"],
+      "theme": "shop"
+    },
+    "blog": {
+      "description": "Blog template with content management",
+      "modules": ["posts", "categories", "comments", "authors"],
+      "default_pages": ["home", "blog", "archive"],
+      "theme": "blog"
+    }
+  }
+}
+

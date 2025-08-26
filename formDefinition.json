@@ -1,0 +1,30 @@
+
+{
+    "fields": [
+      { "name": "form_detail_id", "label": "Form Detail ID", "type": "number", "required": true, "value": "62" },
+      { "name": "column_name", "label": "Column Name", "type": "text", "required": true, "value": "form_master_id" },
+      { "name": "caption", "label": "Caption", "type": "text", "required": false, "value": "" },
+      { "name": "input_type_checkbox", "label": "Checkbox", "input_type": "Checkbox", "required": false, "default_value": "true" },
+      { "name": "input_type_colorpicker", "label": "Color Picker", "input_type": "ColorPicker", "required": false },
+      { "name": "input_type_date", "label": "Date", "input_type": "Date", "required": false, "default_value": "Now()" },
+      { "name": "input_type_decimal", "label": "Decimal", "input_type": "Decimal", "required": false },
+      { "name": "input_type_decimal_negative", "label": "Decimal Negative", "input_type": "DecimalNegative", "required": false },
+      { "name": "input_type_disabled", "label": "Disabled", "input_type": "Disabled", "required": false, "default_value": "Cannot change" },
+      { "name": "input_type_display", "label": "Display", "input_type": "Display", "required": false, "default_value": "Read-only display" },
+      { "name": "input_type_dropdown_editable", "label": "DropDown Editable", "input_type": "DropDownEditable", "options": ["Option 1", "Option 2", "Option 3"], "required": false },
+      { "name": "input_type_email", "label": "Email", "input_type": "Email", "required": false },
+      { "name": "input_type_email_multiple", "label": "Email Multiple", "input_type": "EmailMultiple", "required": false },
+      { "name": "input_type_filename", "label": "Filename", "input_type": "Filename", "required": false },
+      { "name": "input_type_memo", "label": "Memo", "input_type": "Memo", "required": false },
+      { "name": "input_type_number", "label": "Number", "input_type": "Number", "required": false, "input_length": 5 },
+      { "name": "input_type_ole", "label": "OLE", "input_type": "OLE", "required": false },
+      { "name": "input_type_password", "label": "Password", "input_type": "Password", "required": false },
+      { "name": "input_type_random_number", "label": "Random Number", "input_type": "RandomNumber", "required": false, "input_length": 8 },
+      { "name": "input_type_readonly", "label": "ReadOnly", "input_type": "ReadOnly", "required": false, "default_value": "This is read-only" },
+      { "name": "input_type_select_multiple", "label": "Select Multiple", "input_type": "SelectMultiple", "options": ["Choice 1", "Choice 2", "Choice 3"], "required": false },
+      { "name": "input_type_text", "label": "Text", "input_type": "Text", "required": false },
+      { "name": "input_type_website", "label": "Website", "input_type": "Website", "required": false },
+      { "name": "required_flag", "label": "Required", "type": "dropdown", "options": ["Yes", "No"], "required": false, "value": "No" }
+    ]
+}
+

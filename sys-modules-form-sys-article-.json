@@ -1,0 +1,164 @@
+{
+  "fields": [
+    {
+      "name": "article_id",
+      "label": "Article ID", 
+      "type": "number",
+      "required": false,
+      "readonly": true
+    },
+    {
+      "name": "issue_date",
+      "label": "Issue Date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "name": "starting_date", 
+      "label": "Starting Date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "name": "ending_date",
+      "label": "Ending Date", 
+      "type": "date",
+      "required": true
+    },
+    {
+      "name": "sub_menu_id",
+      "label": "Sub Menu ID",
+      "type": "number",
+      "required": false
+    },
+    {
+      "name": "menu",
+      "label": "Menu",
+      "type": "dropdown",
+      "required": true,
+      "lov_dynamic": "sys-menus-simple.json",
+      "lov_value_field": "sub_menu_id",
+      "lov_display_field": "menu_submenu"
+    },
+    {
+      "name": "heading",
+      "label": "Heading", 
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "picture_location",
+      "label": "Picture Location",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "picture2_location", 
+      "label": "Picture 2 Location",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "by_line",
+      "label": "By Line",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "highlight1_flag",
+      "label": "Highlight 1",
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "required": false
+    },
+    {
+      "name": "highlight2_flag",
+      "label": "Highlight 2", 
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "required": false
+    },
+    {
+      "name": "highlight3_flag",
+      "label": "Highlight 3",
+      "type": "dropdown", 
+      "options": ["Yes", "No"],
+      "required": false
+    },
+    {
+      "name": "highlight4_flag",
+      "label": "Highlight 4",
+      "type": "dropdown",
+      "options": ["Yes", "No"], 
+      "required": false
+    },
+    {
+      "name": "highlight5_flag",
+      "label": "Highlight 5",
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "required": false
+    },
+    {
+      "name": "highlight6_flag",
+      "label": "Highlight 6",
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "required": false
+    },
+    {
+      "name": "highlight7_flag", 
+      "label": "Highlight 7",
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "required": false
+    },
+    {
+      "name": "highlight8_flag",
+      "label": "Highlight 8",
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "required": false
+    },
+    {
+      "name": "highlight9_flag",
+      "label": "Highlight 9",
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "required": false
+    },
+    {
+      "name": "active",
+      "label": "Active",
+      "type": "dropdown",
+      "options": ["Yes", "No"],
+      "required": true
+    },
+    {
+      "name": "created_by",
+      "label": "Created By",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "creation_date",
+      "label": "Creation Date",
+      "type": "datetime-local",
+      "required": false,
+      "readonly": true
+    },
+    {
+      "name": "last_updated_by", 
+      "label": "Last Updated By",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "last_update_date",
+      "label": "Last Update Date",
+      "type": "datetime-local", 
+      "required": false,
+      "readonly": true
+    }
+  ]
+}

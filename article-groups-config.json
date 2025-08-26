@@ -1,0 +1,128 @@
+{
+  "version": "1.0.0",
+  "description": "Configuration for article group management system",
+  "last_updated": 1704067200000,
+  "groups": {
+    "highlight1": {
+      "file_name": "article-highlight1.json",
+      "max_size": 25,
+      "type": "highlight",
+      "criteria": {
+        "field": "highlight1_flag",
+        "value": "Yes"
+      },
+      "layout_dependencies": ["Highlight1"]
+    },
+    "highlight2": {
+      "file_name": "article-highlight2.json",
+      "max_size": 25,
+      "type": "highlight",
+      "criteria": {
+        "field": "highlight2_flag",
+        "value": "Yes"
+      },
+      "layout_dependencies": ["Highlight2"]
+    },
+    "highlight3": {
+      "file_name": "article-highlight3.json",
+      "max_size": 25,
+      "type": "highlight",
+      "criteria": {
+        "field": "highlight3_flag",
+        "value": "Yes"
+      },
+      "layout_dependencies": ["Highlight3"]
+    },
+    "highlight4": {
+      "file_name": "article-highlight4.json",
+      "max_size": 25,
+      "type": "highlight",
+      "criteria": {
+        "field": "highlight4_flag",
+        "value": "Yes"
+      },
+      "layout_dependencies": ["Highlight4"]
+    },
+    "highlight5": {
+      "file_name": "article-highlight5.json",
+      "max_size": 25,
+      "type": "highlight",
+      "criteria": {
+        "field": "highlight5_flag",
+        "value": "Yes"
+      },
+      "layout_dependencies": ["Highlight5"]
+    },
+    "highlight6": {
+      "file_name": "article-highlight6.json",
+      "max_size": 25,
+      "type": "highlight",
+      "criteria": {
+        "field": "highlight6_flag",
+        "value": "Yes"
+      },
+      "layout_dependencies": ["Highlight6"]
+    },
+    "highlight7": {
+      "file_name": "article-highlight7.json",
+      "max_size": 25,
+      "type": "highlight",
+      "criteria": {
+        "field": "highlight7_flag",
+        "value": "Yes"
+      },
+      "layout_dependencies": ["Highlight7"]
+    },
+    "highlight8": {
+      "file_name": "article-highlight8.json",
+      "max_size": 25,
+      "type": "highlight",
+      "criteria": {
+        "field": "highlight8_flag",
+        "value": "Yes"
+      },
+      "layout_dependencies": ["Highlight8"]
+    },
+    "highlight9": {
+      "file_name": "article-highlight9.json",
+      "max_size": 25,
+      "type": "highlight",
+      "criteria": {
+        "field": "highlight9_flag",
+        "value": "Yes"
+      },
+      "layout_dependencies": ["Highlight9"]
+    },
+    "articlegroup1": {
+      "file_name": "article-group1.json",
+      "max_size": 25,
+      "type": "menu_based",
+      "criteria": {
+        "field": "menu",
+        "value": "NEWS-Sports",
+        "operator": "starts_with"
+      },
+      "layout_dependencies": ["ArticleGroup1"]
+    },
+    "articlegroup2": {
+      "file_name": "article-group2.json",
+      "max_size": 25,
+      "type": "menu_based",
+      "criteria": {
+        "field": "menu",
+        "value": "NEWS-Business",
+        "operator": "starts_with"
+      },
+      "layout_dependencies": ["ArticleGroup2"]
+    }
+  },
+  "settings": {
+    "cache_ttl": 300000,
+    "parallel_updates": true,
+    "auto_rebuild_frequency": "daily",
+    "backup_groups": true
+  }
+}
+
+
+

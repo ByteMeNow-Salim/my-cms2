@@ -1,0 +1,39 @@
+[
+  {
+    "sys_menu_id": "1",
+    "menu": "test",
+    "order_sequence": "1",
+    "menu_font_face": "",
+    "menu_font_size": "",
+    "menu_text_style": "",
+    "menu_font_weight": "",
+    "menu_color": "#000000",
+    "menu_text_color": "#000000",
+    "menu_button_style": "",
+    "picture": "",
+    "menu_html": "",
+    "menu_html_link_flag": "No",
+    "menu_link": "",
+    "menu_position": "Default",
+    "attention_icon": "",
+    "horizontal3_columns": "",
+    "active": "Yes",
+    "menu_id": 1,
+    "details": [
+      {
+        "sub_menu_id": 1,
+        "sub_menu": "Home",
+        "sub_menu_order": 1,
+        "sub_menu_link": "/home",
+        "active": "Yes"
+      },
+      {
+        "sub_menu_id": 2,
+        "sub_menu": "About Us",
+        "sub_menu_order": 2,
+        "sub_menu_link": "/about",
+        "active": "Yes"
+      }
+    ]
+  }
+]

@@ -1,0 +1,184 @@
+{
+  "modules": [
+
+    {
+      "label": "System Forms",
+      "icon_class": "fas fa-cogs",
+      "group": "Settings",
+      "path": "systemforms",
+      "storage_type": "array",
+      "data_file": "sys-system-forms.json",
+      "id_field": "form_master_id",
+      "detail_id_field": "form_detail_id",
+      "edit_mode": "page",
+      "master_form_description": "System Forms",
+      "detail_form_description": "System Form Details",
+      "columns": [
+        { "name": "description", "label": "Description", "width": "400px" }
+      ],
+      "has_details": true,
+      "detail_columns": [
+        { "name": "column_name", "label": "Name" },
+        { "name": "caption", "label": "Label" },
+        { "name": "input_type", "label": "Type" },
+        { "name": "required_flag", "label": "Required" }
+      ],
+      "has_hooks": true
+    },
+
+
+    {
+      "label": "Menus",
+      "icon_class": "fas fa-cogs",
+      "group": "Settings",
+      "path": "menus",
+      "storage_type": "array",
+      "data_file": "sys-menus.json",
+      "id_field": "menu_id",
+      "detail_id_field": "sub_menu_id",
+      "edit_mode": "page",
+      "master_form_description": "Menus",
+      "detail_form_description": "Sub-Menus",
+      "lov_file": "sys-menus-lov.json",
+      "lov_columns": "menu,menu_id,sub_menu,sub_menu_id,target_window",
+      "columns": [
+        { "name": "menu", "label": "Menu", "width": "400px" }
+      ],
+      "has_details": true,
+      "detail_columns": [
+        { "name": "sub_menu_id", "label": "Sub Menu ID" },
+        { "name": "sub_menu", "label": "Sub Menu" }
+      ],
+      "has_hooks": true
+    },
+
+
+    {
+      "label": "System Layouts",
+      "icon_class": "fas fa-cogs",
+      "group": "Settings",
+      "path": "system-layouts",
+      "storage_type": "array",
+      "data_file": "sys-system-layouts.json",
+      "id_field": "system_layout_id",
+      "edit_mode": "pages",
+      "columns": [
+        { "name": "layout_name", "label": "Layout Name", "width": "400px" },
+        { "name": "layout_limit", "label": "Limit", "width": "50px" },
+        { "name": "order_sequence", "label": "Order", "width": "50px" },
+        { "name": "active", "label": "Active", "width": "50px" }
+      ],
+      "has_hooks": true
+    },
+
+
+    {
+      "label": "System Codes",
+      "icon_class": "fas fa-cogs",
+      "group": "Settings",
+      "path": "codes",
+      "storage_type": "array",
+      "data_file": "sys-codes.json",
+      "id_field": "code_id",
+      "edit_mode": "inline",
+      "columns": [
+        { "name": "code_type", "label": "Code Type", "width": "100px" },
+        { "name": "code_name", "label": "Code Name", "width": "400px" },
+        { "name": "active", "label": "Active", "width": "50px" }
+      ],
+      "has_hooks": false
+    },
+
+
+    {
+      "label": "Events",
+      "icon_class": "fas fa-cogs",
+      "group": "Updates",
+      "path": "auction-event",
+      "storage_type": "array",
+      "data_file": "sys-auction-events.json",
+      "id_field": "event_id",
+      "columns": [
+        { "name": "event_name", "label": "My Events", "width": "200px" },
+        { "name": "event_code", "label": "Event Code", "width": "200px" }
+      ],
+      "has_details": false,
+      "has_hooks": true
+    },
+
+
+    {
+      "label": "My Test",
+      "icon_class": "fas fa-cogs",
+      "group": "Updates",
+      "path": "test",
+      "storage_type": "array",
+      "data_file": "sys-my-test.json",
+      "id_field": "test_id",
+      "edit_mode": "pages",
+      "columns": [
+        { "name": "address", "label": "Address", "width": "200px" }
+      ],
+      "has_details": false,
+      "has_hooks": false
+    },
+
+
+
+    {
+      "label": "Events111",
+      "icon_class": "fas fa-cogs",
+      "group": "Updates",
+      "path": "auction-even111t",
+      "storage_type": "array",
+      "data_file": "sys-auction-events111.json",
+      "id_field": "event_id",
+      "columns": [
+        { "name": "event_name", "label": "My Events", "width": "200px" },
+        { "name": "event_code", "label": "Event Code", "width": "200px" }
+      ],
+      "has_details": false,
+      "has_hooks": true
+    },
+
+
+    {
+      "label": "Articles",
+      "icon_class": "fas fa-newspaper",
+      "group": "Updates",
+      "path": "articles",
+      "storage_type": "D1",
+      "storage_D1_table": "articles",
+      "storage_D1_order_by": "issue_date desc, last_update_date desc",
+      "storage_D1_columns": "article_id, issue_date, starting_date, ending_date, menu_id, sub_menu_id, menu, heading, body, picture_alignment, picture_location, picture2_location, by_line, source_line, highlight1_flag, highlight2_flag, highlight3_flag, highlight4_flag, highlight5_flag, highlight6_flag, highlight7_flag, highlight8_flag, highlight9_flag, articlegroup1_flag, articlegroup2_flag, articlegroup3_flag, articlegroup4_flag, articlegroup5_flag, articlegroup6_flag, articlegroup7_flag, articlegroup8_flag, articlegroup9_flag, unique_file, active, created_by, creation_date, last_updated_by, last_update_date",
+      "storage_JSON_columns": "article_id, issue_date, starting_date, ending_date, menu_id, sub_menu_id, menu, heading, body, picture_alignment, picture_location, picture2_location, by_line, source_line, highlight1_flag, highlight2_flag, highlight3_flag, highlight4_flag, highlight5_flag, highlight6_flag, highlight7_flag, highlight8_flag, highlight9_flag, articlegroup1_flag, articlegroup2_flag, articlegroup3_flag, articlegroup4_flag, articlegroup5_flag, articlegroup6_flag, articlegroup7_flag, articlegroup8_flag, articlegroup9_flag, unique_file, active, created_by, creation_date, last_updated_by, last_update_date",
+      "data_file": "sys-article-{{UnixMiliSecondsTimeStamp}}.json",
+      "id_field": "article_id",
+      "master_form_description": "Articles",
+      "columns": [
+        { "name": "heading", "label": "Heading", "width": "200px" },
+        { "name": "menu", "label": "Menu", "width": "200px" },
+        { "name": "active", "label": "Active", "width": "200px" }
+      ],
+      "pagination": {
+        "enabled": true,
+        "page_size": 5,
+        "default_page_size": 5,
+        "show_page_size_options": [5, 10, 25, 50]
+      },
+      "has_hooks": true
+    },
+
+
+
+    {
+      "label": "Site Settings",
+      "icon_class": "fas fa-sliders-h",
+      "group": "Settings",
+      "path": "site-settings",
+      "storage_type": "single_object",
+      "data_file": "site-settings.json",
+      "id_field": null
+    }
+  ]
+}

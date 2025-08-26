@@ -1,0 +1,29 @@
+name = "my-cms"
+main = "index.js"
+compatibility_date = "2024-05-02"
+
+# R2 Configuration - Auto-populated from sys-settings-admin.json by deploy script
+r2_buckets = [
+  { binding = "R2", bucket_name = "{{BUCKET_NAME}}", preview_bucket_name = "{{BUCKET_NAME}}-dev" }
+]
+
+[vars]
+ENVIRONMENT = "production"
+# All sensitive values are in sys-settings-admin.json
+# This file only contains deployment bindings
+
+[dev]
+ip = "0.0.0.0"
+port = 8787
+
+# Module rules to ensure all JS files are treated as ES modules
+[[rules]]
+type = "ESModule"
+globs = ["**/*.js"]
+fallthrough = true
+
+# D1 Database Configuration - Auto-populated from sys-settings-admin.json by deploy script
+[[d1_databases]]
+binding = "D1" # Makes it available in your worker as env.D1
+database_name = "{{DATABASE_NAME}}"
+database_id = "{{DATABASE_ID}}"

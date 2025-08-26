@@ -1,0 +1,130 @@
+{
+  "menus": [
+    {
+      "menu_id": 1,
+      "menu": "NEWS",
+      "sub_menu_id": 1,
+      "sub_menu": "Sports",
+      "menu_submenu": "News - Sports"
+    },
+    {
+      "menu_id": 1,
+      "menu": "NEWS",
+      "sub_menu_id": 2,
+      "sub_menu": "Business",
+      "menu_submenu": "News - Business"
+    },
+    {
+      "menu_id": 1,
+      "menu": "NEWS",
+      "sub_menu_id": 3,
+      "sub_menu": "Politics",
+      "menu_submenu": "News - Politics"
+    },
+    {
+      "menu_id": 1,
+      "menu": "NEWS",
+      "sub_menu_id": 4,
+      "sub_menu": "Local",
+      "menu_submenu": "News - Local"
+    },
+    {
+      "menu_id": 2,
+      "menu": "SERVICES",
+      "sub_menu_id": 5,
+      "sub_menu": "Contact Us",
+      "menu_submenu": "Services - Contact Us"
+    },
+    {
+      "menu_id": 2,
+      "menu": "SERVICES",
+      "sub_menu_id": 6,
+      "sub_menu": "Submit News",
+      "menu_submenu": "Services - Submit News"
+    },
+    {
+      "menu_id": 2,
+      "menu": "SERVICES",
+      "sub_menu_id": 7,
+      "sub_menu": "Advertise",
+      "menu_submenu": "Services - Advertise"
+    },
+    {
+      "menu_id": 3,
+      "menu": "DIRECTORY",
+      "sub_menu_id": 8,
+      "sub_menu": "Restaurants",
+      "menu_submenu": "Directory - Restaurants"
+    },
+    {
+      "menu_id": 3,
+      "menu": "DIRECTORY",
+      "sub_menu_id": 9,
+      "sub_menu": "Healthcare",
+      "menu_submenu": "Directory - Healthcare"
+    },
+    {
+      "menu_id": 3,
+      "menu": "DIRECTORY",
+      "sub_menu_id": 10,
+      "sub_menu": "Auto Services",
+      "menu_submenu": "Directory - Auto Services"
+    },
+    {
+      "menu_id": 3,
+      "menu": "DIRECTORY",
+      "sub_menu_id": 11,
+      "sub_menu": "Shopping",
+      "menu_submenu": "Directory - Shopping"
+    },
+    {
+      "menu_id": 4,
+      "menu": "CLASSIFIEDS",
+      "sub_menu_id": 12,
+      "sub_menu": "Cars",
+      "menu_submenu": "Classifieds - Cars"
+    },
+    {
+      "menu_id": 4,
+      "menu": "CLASSIFIEDS",
+      "sub_menu_id": 13,
+      "sub_menu": "Real Estate",
+      "menu_submenu": "Classifieds - Real Estate"
+    },
+    {
+      "menu_id": 4,
+      "menu": "CLASSIFIEDS",
+      "sub_menu_id": 14,
+      "sub_menu": "Jobs",
+      "menu_submenu": "Classifieds - Jobs"
+    },
+    {
+      "menu_id": 4,
+      "menu": "CLASSIFIEDS",
+      "sub_menu_id": 15,
+      "sub_menu": "For Sale",
+      "menu_submenu": "Classifieds - For Sale"
+    },
+    {
+      "menu_id": 5,
+      "menu": "COMMUNITY",
+      "sub_menu_id": 16,
+      "sub_menu": "Events",
+      "menu_submenu": "Community - Events"
+    },
+    {
+      "menu_id": 5,
+      "menu": "COMMUNITY",
+      "sub_menu_id": 17,
+      "sub_menu": "Organizations",
+      "menu_submenu": "Community - Organizations"
+    },
+    {
+      "menu_id": 5,
+      "menu": "COMMUNITY",
+      "sub_menu_id": 18,
+      "sub_menu": "Schools",
+      "menu_submenu": "Community - Schools"
+    }
+  ]
+}

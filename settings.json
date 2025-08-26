@@ -1,0 +1,53 @@
+{
+  "image_upload": {
+    "compression_enabled": true,
+    "image_quality": 0.8,
+    "max_image_dimension": 1920,
+    "max_file_size": 10485760,
+    "allowed_file_types": ["image/jpeg", "image/png", "image/gif", "image/webp"],
+    "generate_thumbnails": false,
+    "thumbnail_size": 300,
+    "convert_to_jpeg": true
+  },
+  "ui_text": {
+    "single_upload": {
+      "choose_file": "Choose File",
+      "uploading": "Uploading...",
+      "upload_complete": "Upload complete!",
+      "upload_error": "Upload failed",
+      "image_removed": "Image removed"
+    },
+    "multiple_upload": {
+      "drag_drop_text": "Drag & drop files here, or",
+      "browse_button": "Browse", 
+      "file_size_limit": "Maximum file size: 10MB",
+      "uploading_multiple": "Uploading {count} file(s)...",
+      "upload_complete_multiple": "Successfully uploaded {count} file(s)!",
+      "current_images": "Current Images ({count})",
+      "clear_all": "Clear All",
+      "remove_image": "Remove",
+      "preview_image": "Preview",
+      "confirm_clear_all": "Are you sure you want to remove all images?"
+    }
+  },
+  "compression_settings": {
+    "ole_single": {
+      "max_width": 1920,
+      "max_height": 1920, 
+      "quality": 0.8,
+      "convert_to_jpeg": true
+    },
+    "ole_multiple": {
+      "max_width": 1200,
+      "max_height": 1200,
+      "quality": 0.8,
+      "convert_to_jpeg": true
+    },
+    "thumbnail": {
+      "max_width": 300,
+      "max_height": 300,
+      "quality": 0.7,
+      "convert_to_jpeg": true
+    }
+  }
+}

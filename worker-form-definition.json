@@ -1,0 +1,19 @@
+
+{
+    "fields": [
+        {
+            "name": "status",
+            "label": "Status",
+            "lov_static": "<option value=\"Active\">Active</option><option value=\"Inactive\">Inactive</option>"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+

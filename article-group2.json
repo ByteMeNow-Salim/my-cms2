@@ -1,0 +1,46 @@
+{
+  "group_name": "articlegroup2",
+  "group_type": "menu_based",
+  "max_size": 25,
+  "description": "Latest articles from Business categories",
+  "last_updated": 1704067200000,
+  "update_criteria": {
+    "field": "menu",
+    "value": "NEWS-Business",
+    "operator": "starts_with"
+  },
+  "articles": [
+    {
+      "article_id": 4001,
+      "position": 1,
+      "heading": "Economic Forecast Shows Growth",
+      "body": "Economists predict continued growth through 2024...",
+      "issue_date": 1704067200000,
+      "starting_date": 1704067200000,
+      "ending_date": 1704153600000,
+      "sub_menu_id": 3,
+      "menu": "NEWS-Business",
+      "picture_location": "economic-growth-2024.jpg",
+      "picture2_location": "",
+      "by_line": "Economics Reporter",
+      "highlight1_flag": "No",
+      "highlight2_flag": "No",
+      "highlight3_flag": "No",
+      "highlight4_flag": "No",
+      "highlight5_flag": "Yes",
+      "highlight6_flag": "No",
+      "highlight7_flag": "No",
+      "highlight8_flag": "No",
+      "highlight9_flag": "No",
+      "unique_file": "sys-article-1704067200004.json",
+      "active": "Yes",
+      "created_by": "admin",
+      "creation_date": 1704067200000,
+      "last_updated_by": "admin",
+      "last_update_date": 1704067200000
+    }
+  ]
+}
+
+
+

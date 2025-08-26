@@ -1,0 +1,168 @@
+{
+  "config_type": "hosting_admin",
+  "version": "1.0.0",
+  "last_updated": "2025-01-21T10:30:00Z",
+  "environment": "production",
+
+  "hosting_provider": {
+    "company_name": "Your CMS Hosting Co",
+    "support_email": "support@yourcms.com",
+    "billing_tier": "professional",
+    "account_manager": "support@yourcms.com",
+    "internal_notes": "CF Salim - Premium client"
+  },
+
+  "cloudflare": {
+    "account_id": "14d520fc3317fd993f50bd647d75ac61",
+    "account_name": "CMS-Hosting-Production",
+    "master_api_token": "your_master_api_token",
+    "zone_id": "your_zone_id_here",
+    "zone_api_token": "your_api_token_here",
+    "region": "auto"
+  },
+
+  "r2": {
+    "bucket_name": "cfsalim-com",
+    "access_key_id": "f1d793e8b6ca2d7e1ff7a4b1ec24e3f1",
+    "secret_access_key": "3a49b028f2cda790bee3258930b526db6d965b446c63c162bf921a7d67a1b066",
+    "public_url": "https://pub-0852f3a82b534b18991316b054236b23.r2.dev",
+    "custom_domain": "https://cfsalim.com",
+    "backup_bucket": "cfsalim-com-backup",
+    "cors_configuration": {
+      "allowed_origins": ["*"],
+      "allowed_methods": ["GET", "PUT", "POST", "DELETE", "HEAD"],
+      "allowed_headers": ["*"],
+      "expose_headers": ["ETag", "Content-Length"],
+      "max_age_seconds": 3600
+    }
+  },
+
+  "d1": {
+    "database_name": "cfsalim-com",
+    "database_id": "e98b460a-688d-4cc5-9290-c41da8a1efa0",
+    "backup_database_id": "backup-db-id-here",
+    "replication_enabled": false,
+    "backup_schedule": "daily",
+    "schema_version": "1.0"
+  },
+
+  "worker": {
+    "worker_name": "cfsalim-com-cms",
+    "subdomain": "cfsalim-com",
+    "custom_domain": "cfsalim.com",
+    "routes": [
+      {
+        "pattern": "cfsalim.com/*",
+        "zone_id": "your_zone_id_here"
+      }
+    ],
+    "environment_variables": {
+      "ENVIRONMENT": "production",
+      "DEBUG_MODE": "false"
+    }
+  },
+
+  "client_info": {
+    "client_id": "cfsalim-com",
+    "domain": "cfsalim.com",
+    "status": "active",
+    "plan": "professional",
+    "signup_date": "2025-08-14T00:00:00Z",
+    "billing": {
+      "monthly_cost": 49.99,
+      "currency": "USD",
+      "billing_email": "billing@cfsalim.com",
+      "payment_method": "credit_card",
+      "auto_renew": true
+    }
+  },
+
+  "auto_provision": {
+    "enabled": true,
+    "create_r2_bucket": true,
+    "create_d1_database": true,
+    "setup_domain_routing": true,
+    "deploy_worker": true,
+    "initialize_data": true,
+    "worker_template": "my-cms-template",
+    "default_modules": ["articles", "site-settings", "gallery"]
+  },
+
+  "resource_limits": {
+    "storage_gb": 10,
+    "bandwidth_gb": 100,
+    "requests_per_month": 1000000,
+    "worker_cpu_ms": 50000,
+    "concurrent_requests": 100,
+    "file_upload_limit_mb": 10
+  },
+
+  "monitoring": {
+    "uptime_monitoring": true,
+    "performance_monitoring": true,
+    "error_tracking": true,
+    "analytics_enabled": true,
+    "log_retention_days": 30,
+    "alert_webhooks": [
+      "https://internal.yourcms.com/alerts"
+    ]
+  },
+
+  "security": {
+    "admin_api_keys": [
+      "admin-key-123456789",
+      "backup-admin-key-987654321"
+    ],
+    "encryption_key": "your-encryption-key-here",
+    "internal_access_ips": [
+      "203.0.113.0/24",
+      "198.51.100.0/24"
+    ],
+    "security_headers": {
+      "hsts_enabled": true,
+      "csp_enabled": true,
+      "xss_protection": true
+    }
+  },
+
+  "backup": {
+    "auto_backup": true,
+    "backup_frequency": "daily",
+    "backup_time": "03:00 UTC",
+    "retention_days": 30,
+    "backup_locations": [
+      "r2://cfsalim-com-backup/"
+    ],
+    "encryption_enabled": true
+  },
+
+  "maintenance": {
+    "maintenance_window": "03:00-05:00 UTC",
+    "auto_updates": true,
+    "update_channel": "stable",
+    "rollback_enabled": true,
+    "health_checks": {
+      "endpoint": "/health",
+      "interval_seconds": 300,
+      "timeout_seconds": 30
+    }
+  },
+
+  "global_settings": {
+    "cms_version": "1.0.0",
+    "default_timezone": "UTC",
+    "session_timeout": 3600,
+    "backup_retention_days": 30
+  },
+
+  "internal": {
+    "provisioning_date": "2025-08-14T00:00:00Z",
+    "last_maintenance": "2025-01-20T03:00:00Z",
+    "support_priority": "high",
+    "technical_contact": "tech@cfsalim.com",
+    "billing_contact": "billing@cfsalim.com",
+    "server_location": "auto",
+    "custom_modifications": []
+  }
+}
+

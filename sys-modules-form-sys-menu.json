@@ -1,0 +1,145 @@
+{
+  "fields": [
+    {
+      "name": "menu_id",
+      "label": "",
+      "type": "number",
+      "required": false
+    },
+    {
+      "name": "menu",
+      "label": "Menu",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "order_sequence",
+      "label": "Order No.",
+      "type": "number",
+      "required": false,
+      "min": "-999999",
+      "max": "999999",
+      "step": "any"
+    },
+    {
+      "name": "menu_font_face",
+      "label": "Font Family",
+      "type": "text",
+      "required": false,
+      "size": "10",
+      "maxlength": "10"
+    },
+    {
+      "name": "menu_font_size",
+      "label": "Font Size",
+      "type": "number",
+      "required": false,
+      "max": "99"
+    },
+    {
+      "name": "menu_text_style",
+      "label": "Text Style",
+      "type": "text",
+      "required": false,
+      "size": "10",
+      "maxlength": "10",
+      "lov_static": "<option><option>Normal<option>Italic<option>"
+    },
+    {
+      "name": "menu_font_weight",
+      "label": "Font Weight",
+      "type": "text",
+      "required": false,
+      "size": "10",
+      "maxlength": "10",
+      "lov_static": "<option><option>Normal<option>Lighter<option>Bold<option>Bolder<option>"
+    },
+    {
+      "name": "menu_color",
+      "label": "Background Color",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "menu_text_color",
+      "label": "Text Color",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "menu_button_style",
+      "label": "Button Style",
+      "type": "text",
+      "required": false,
+      "size": "10",
+      "maxlength": "10",
+      "lov_static": "<option>0001<option>0002<option>0003<option>0004<option>0005<option>0006<option>0007<option>0008<option>0009<option>0010<option>0011<option>0012<option>0013<option>0014<option>0015<option>0016<option>0017<option>0018<option>0019<option>0020<option>"
+    },
+    {
+      "name": "picture",
+      "label": "Picture",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "menu_html",
+      "label": "Menu (HTML)",
+      "type": "textarea",
+      "required": false,
+      "rows": "6",
+      "cols": "50"
+    },
+    {
+      "name": "menu_html_link_flag",
+      "label": "Make Hyperlink",
+      "type": "text",
+      "required": false,
+      "size": "10",
+      "maxlength": "10",
+      "lov_static": "<option>No<option>Yes<option>"
+    },
+    {
+      "name": "menu_link",
+      "label": "Menu Link",
+      "type": "text",
+      "required": false,
+      "size": "50",
+      "maxlength": "500"
+    },
+    {
+      "name": "menu_position",
+      "label": "Menu Position",
+      "type": "text",
+      "required": false,
+      "size": "10",
+      "maxlength": "10",
+      "lov_static": "<option>Default<option>Hidden<option>Horizontal<option>Vertical<option>SandwichHorizontal<option>SandwichVertical<option>"
+    },
+    {
+      "name": "attention_icon",
+      "label": "Attention Icon",
+      "type": "text",
+      "required": false,
+      "size": "10",
+      "maxlength": "10",
+      "lov_static": "<option><option>Alert<option>BulletSquare1<option>Dollar<option>Hot<option>New<option>Sale<option>Updated<option>"
+    },
+    {
+      "name": "horizontal3_columns",
+      "label": "Sub-menu Columns",
+      "type": "number",
+      "required": false,
+      "min": "1",
+      "max": "99"
+    },
+    {
+      "name": "active",
+      "label": "Active",
+      "type": "text",
+      "required": false,
+      "size": "10",
+      "maxlength": "10",
+      "lov_static": "<option>No<option>Yes<option>"
+    }
+  ]
+}
